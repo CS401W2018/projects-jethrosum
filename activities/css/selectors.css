@@ -1,0 +1,36 @@
+h3 {  /* This is a Tag Name. */
+    font-family: fantasy;
+    font-style: italic;
+    color: darkslategrey;
+}
+
+body h4 {  /* This is a Descendent. */
+    font-family: fantasy;
+    font-style: italic;
+    color: darkslategray;
+    font-size: smaller;
+}
+
+#first {   /* This is an ID. */
+    color: coral;
+}
+
+.second {  /* This is a Class. */
+    color: cadetblue;
+}
+
+.pink {
+    color: pink;
+}
+
+.bigger {
+    font-size: larger;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.block {
+    background-color: bisque;
+}
