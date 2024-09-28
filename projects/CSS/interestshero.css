@@ -1,0 +1,41 @@
+body {
+    background-color: #39393A;
+}
+
+body {
+    color: #E6E6E6;
+}
+
+#title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FF8552;
+}
+
+#title2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FF8552;
+}
+
+.subheading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: #85FFC7;
+}
+
+.bolder {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: large;
+}
+
+.block {
+    background-color: #E6E6E6;
+}
+
+#questionone {
+    color: #FF8552;
+}
+
+#questiontwo {
+    color: #E6E6E6;
+}
