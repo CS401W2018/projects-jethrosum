@@ -1,0 +1,22 @@
+nav a {
+    color:blueviolet;
+}
+
+.current {
+    color: crimson;
+}
+
+header h3 {
+    color:cornsilk;
+    background-image: url("jungle.jpg");
+}
+
+header {
+    background-position: 500px 5px;
+    background-repeat: no-repeat;
+    background-image: url("flag.png");
+}
+
+.list {
+    list-style-image: url("pin.png");
+}
