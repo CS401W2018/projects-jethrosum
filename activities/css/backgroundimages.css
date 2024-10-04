@@ -11,12 +11,12 @@ header h3 {
     background-image: url("jungle.jpg");
 }
 
-header {
-    background-position: 500px 5px;
-    background-repeat: no-repeat;
-    background-image: url("flag.png");
-}
-
 .list {
     list-style-image: url("pin.png");
+}
+
+body {
+    background-image: url("flag.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
