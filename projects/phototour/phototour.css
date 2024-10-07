@@ -1,0 +1,49 @@
+.bg {
+    background-image: url("bg.jpg");
+    background-repeat: repeat;
+}
+
+header h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #E6E6E6;
+}
+
+nav {
+    background-color: #E6E6E6;
+}
+
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+
+footer {
+    font-size: smaller;
+}
+
+header h2 {
+    font-size: xx-large;
+}
+
+.image {
+    float: right;
+    margin-right: 10px;
+}
+
+.active {
+    color:black;
+}
+
+.pin1 {
+    list-style-image: url("pin.png");
+    position: relative;
+    padding-left: 50px;
+}
