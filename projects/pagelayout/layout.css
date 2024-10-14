@@ -4,6 +4,18 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    background-origin: content-box;
+}
+
+#wrapper {
+    background-color: rgb(0, 0, 0, 0.25);
+    width: 100%;
+    min-height: 550px;
+    margin: 0 auto; /* first value represent top and bottom values, second value represents left and right values */
+}
+
+header {
+    padding: 10px 10px;
 }
 
 header h1 {
@@ -21,15 +33,27 @@ header h1 {
 
 }
 
-nav a {
+nav {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+nav a {
+    display: inline-block;
+    flex-wrap: 1;
     background-color:antiquewhite;
-    display: block;
+    width: 250px;
     color: rgb(203, 96, 64);
     border-bottom: thin solid white;
-    padding: 10px 10px;
+    padding: 10px 20px; 
+    margin: 0 5px;
     box-sizing: border-box;
     border-radius: 10px;
+    text-align: center;
 }
 
 nav a:hover {
