@@ -1,0 +1,15 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    background-color: bisque;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* fr = fractional unit, therefore all "children" or elements will align themselves into 3 fractional units or 3 columns */
+}
+
+.item {
+    background-color: burlywood;
+    border: thick solid white;
+}
