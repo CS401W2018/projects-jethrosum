@@ -1,0 +1,23 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item {
+    background-color: cadetblue;
+    padding: 10px 10px;
+    width: 100px;
+}
+
+div:hover {
+    color: black;
+    background-color: white;
+}
