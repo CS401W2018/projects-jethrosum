@@ -1,0 +1,60 @@
+header {
+    background-color: #ee6c4e;
+    color: #293241;
+    padding: 10px;
+    text-align: center;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #293241;
+    padding: 15px;
+}
+
+nav a {
+    color: #e0fbfc;
+}
+
+.page {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    grid-template-columns: 20px 20% 60%;
+    background-color: #293241;
+    color: #e0fbfc;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+    padding: 10px;
+}
+
+.card {
+    flex: 1 1; 
+    background-color: #3d5a80;
+    color: #e0fbfc;
+    padding: 5px;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
