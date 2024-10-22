@@ -44,7 +44,7 @@ nav {
 
 nav a {
     display: inline-block;
-    flex-wrap: 1;
+    flex-wrap: wrap;
     background-color:antiquewhite;
     width: 250px;
     color: rgb(203, 96, 64);
