@@ -1,0 +1,44 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: brown;
+}
+
+header h2 {
+    margin: 0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mavuika {
+    width: 300px;  
+    border: thin solid red;
+    box-shadow: 5px 5px 5px rgba(250,50,50,75%);  /* Values --> x-coord, y-coord, blur radius and color */
+    text-align: center;
+    margin: 10px;
+}
+
+.mavuika img {
+    width: 100%;
+}
+

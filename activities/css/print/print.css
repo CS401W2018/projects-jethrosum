@@ -1,0 +1,39 @@
+/* Adjusting CSS for PRINTING */
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+header {
+    background-color: brown;
+}
+
+header h2 {
+    margin: 0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: none; /* This means that when printing this webpage, the nav content won't be included */
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mavuika {
+    width: 300px;  
+    border: thin solid red;
+    box-shadow: 5px 5px 5px rgba(250,50,50,75%);  /* Values --> x-coord, y-coord, blur radius and color */
+    text-align: center;
+    margin: 10px;
+}
+
+.mavuika img {
+    width: 100%;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page for Print</title>
+    <link rel="stylesheet" href="main.css" media="screen">  <!-- media="screen" means that the CSS that gets used when webpage is open on devices is main.css -->
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <header>
+        <h2>Page for Print</h2>  <!-- Learning how to make responsive webpages or webpages that respond to the dimensions of the screen -->
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <!-- To use flex or grid, IDENTIFY THE PARENT AND THE CHILD. Apply flex or grid on the parent otherwise the child will become a parent -->
+
+    <main>
+        <h3>Cards</h3>
+
+        <!-- You can CREATE a NEW PARENT using div tags -->
+         <div class="card">
+
+            <div class="mavuika">
+                <img src="mavuika.jpg" alt="Mavuika - The Pyro Archon"> 
+                <h4> Mavuika </h4>
+                <p>The Pyro Archon</p>
+            </div>
+
+            <div class="mavuika">
+                <img src="mavuika.jpg" alt="Mavuika - The Pyro Archon"> 
+                <h4> Mavuika </h4>
+                <p>The Pyro Archon</p>
+            </div>
+    
+            <div class="mavuika">
+                <img src="mavuika.jpg" alt="Mavuika - The Pyro Archon"> 
+                <h4> Mavuika </h4>
+                <p>The Pyro Archon</p>
+            </div>
+            </div>
+
+         </div>
+
+
+        <hr>
+        <h3>Engagement</h3>
+        <ul>
+            <li>
+                Why is the viewport meta tag important?
+                <blockquote>
+                    It ensures web pages display correctly on different screen sizes, especially on mobile devices.
+                </blockquote>
+            </li>
+            <li>
+                How can you adjust the CSS for printing?
+                <blockquote>
+                    Use @media print in CSS to define styles specifically for printed versions of your webpage.
+                </blockquote>
+            </li>
+            <li>
+                When would you want to adjust the CSS for printing?
+                <blockquote>
+                    You'd adjust it when you want your webpage to look clean and optimized when printed, such as hiding navigation menus or simplifying layouts.
+                </blockquote>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; Jethro Sumiran</p>
+    </footer>
+</body>
+</html>
