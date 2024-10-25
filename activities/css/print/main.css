@@ -17,7 +17,6 @@ nav {
     display: flex;
     background-color: black;
     padding: 10px;
-    text-align: center;
     justify-content: space-evenly;
 }
 
@@ -28,6 +27,8 @@ nav a {
 .card {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .mavuika {
@@ -40,5 +41,43 @@ nav a {
 
 .mavuika img {
     width: 100%;
+}
+
+@media only screen and (max-width: 650px) {  /* This means "only apply this CSS to screens with a max width of 800px or below */
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+        text-align: center;
+    }
+
+    .mavuika {
+        width: 100%;
+    }
+
+    body {
+        background-color:bisque;
+    }
+
+    .main-mavuika {    /* Changes the order of the cards so that "Center Mavuika" gets places at the top */
+        order: -1;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1100px) {  /* This means "only apply this CSS to screens with a max width of 1200px or below */
+    nav {
+        background-color: WHITE;
+    }
+
+    nav a {
+        color: black;
+    }
+
+    body {
+        background-color:black;
+        color: WHITE;
+    }
 }
 
