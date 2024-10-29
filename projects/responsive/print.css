@@ -1,0 +1,75 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer is at the bottom */
+}
+
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: larger;
+    color: #A5B68D;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+header h4 {
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+header h2 {
+    margin-bottom: 0px;
+}
+
+nav {
+    display: none;
+}
+
+.page {
+    display: flex;
+    flex: 1; /* Allow the page to grow and push the footer down */
+}
+
+.sidebar {
+    flex: 0 0 20%; /* Sidebar width */
+    background-color: #A5B68D;
+    color: white;
+    box-sizing: border-box; 
+    text-align: center;
+    padding: 20px;
+}
+
+figure {
+    color: WHITE;
+}
+
+figcaption {
+    font-style: italic;
+    color: white;
+}
+
+.art {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1; /* Allow articles to take available space */
+}
+
+.card {
+    width: 300px;  
+    border: thin solid #DA8359;
+    box-shadow: 5px 5px #DA8359;  /* Values --> x-coord, y-coord, blur radius and color */
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+footer {
+    color: #DA8359;
+    display: none;
+}
