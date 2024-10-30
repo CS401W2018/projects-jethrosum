@@ -1,0 +1,21 @@
+header {
+    color: BLACK;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.border {
+    margin: 5px auto;
+    border: thin solid BLACK;
+    border-spacing: 5px;
+    background-color:bisque
+}
+
+.border th, .border td {
+    border: thin solid black;
+    padding: 5px;
+    background-color: brown;
+}
