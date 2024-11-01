@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Tables</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <header>
+        <h2>My Table</h2>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar-right">
+                <figure>
+                    <img src="billie1.png" alt="Billie Eilish">
+                    <figcaption>
+                        This table contains information regarding my favorite songs from some of my favorite artists. 
+                        I'm typically more drawn towards RnB music but I can easily pick up songs from other genres too.
+                        This table includes songs from Billie Eilish, SZA and Doja Cat, some of the leading artists of modern music. 
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <table class="border">
+            <caption>My favorite songs from some of the leading artists of modern music.</caption>
+            <thead>
+                <tr><td colspan="5">My Favorite Songs</td></tr>
+            </thead>
+            <tbody>
+                <tr id="head"><th>Artist</th><th>Song</th><th>Album</th><th>Year</th><th>Streams</th></tr>
+                <tr id="one"><td>Billie Eilish</td><td>"Birds of A Feather"</td><td>HIT ME HARD AND SOFT</td><td>2024</td><td>1,365,824,219</td></tr>
+                <tr id="two"><td>SZA</td><td>"Good Days"</td><td>SOS</td><td>2020</td><td>1,236,443,109</td></tr>
+                <tr id="three"><td>Doja Cat</td><td>"You Right"</td><td>Planet Her</td><td>2021</td><td>885,308,358</td></tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="total-streams">Total Streams</th>
+                    <td headers="total-streams">3 billion +</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jethro Sumiran</p>
+    </footer>
+</body>
+</html>
