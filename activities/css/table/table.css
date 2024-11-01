@@ -10,12 +10,31 @@ body {
 .border {
     margin: 5px auto;
     border: thin solid BLACK;
-    border-spacing: 5px;
-    background-color:bisque
+    background-color:bisque;
+    justify-content: center;
+    border-collapse: collapse;
+
 }
 
 .border th, .border td {
-    border: thin solid black;
-    padding: 5px;
-    background-color: brown;
+    border: thin solid WHITE;
+    padding: 10px;
+    background-color:darkolivegreen;
+}
+
+.engagement {
+    color: BLACK;
+}
+
+.engagement li {
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.engagement blockquote {
+    font-style: normal;
+}
+
+footer {
+    color: black;
 }

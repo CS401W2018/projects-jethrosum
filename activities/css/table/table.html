@@ -17,20 +17,45 @@
             </thead>
             <tbody>
                 <tr><th>Class</th><th>Professor</th><th>Time</th><th>Location</th><th>Days</th><th>Credits</th></tr>
-                <tr><td>ART 119</td><td>Robert McConnell</td><td>8:00AM</td><td>MWF</td><td>McKay</td><td rowspan="4">3</td></tr>
-                <tr><td>CS 140</td><td>Christopher Slade</td><td>12:00PM</td><td>MWF</td><td>Portable 2</td></tr>
-                <tr><td>CS 202</td><td>Knowlton Itaaehau</td><td>9:30AM</td><td>TTH</td><td>Protable 3</td></tr>
-                <tr><td>IT 124</td><td>Mark Fitzgerald</td><td>12:00PM</td><td>TTH</td><td>Portable 1</td></tr>
+                <tr><td>ART 119</td><td>Robert McConnell</td><td>8:00AM</td><td rowspan="2">MWF</td><td>McKay</td><td rowspan="4">3</td></tr>
+                <tr><td>CS 140</td><td>Christopher Slade</td><td>12:00PM</td><td>Portable 2</td></tr>
+                <tr><td>CS 202</td><td>Knowlton Itaaehau</td><td>9:30AM</td><td rowspan="2">TTH</td><td>Protable 3</td></tr>
+                <tr><td>IT 124</td><td>Mark Fitzgerald</td><td>12:00PM</td><td>Portable 1</td></tr>
             </tbody>
             <tfoot>
-                <th colspan="5" id="total-credits">Total Credits</th>
-                <td header="total-credits">12</td>
+                <tr>
+                    <th colspan="5" id="total-credits">Total Credits</th>
+                    <td header="total-credits">12</td>
+                </tr>
             </tfoot>
         </table>
-
+        <hr>
+        <div class="engagement">
+            <h3>Engagement Questions (Nov 1)</h3>
+            <ul>
+                <li>
+                    Why don't we use the border property?
+                    <blockquote>
+                        We don't use the border tag within html because it's now invalid. We add borders to our table using CSS instead.
+                    </blockquote>
+                </li>
+                <li>
+                    What is the easiest way to color every other row a different color?
+                    <blockquote>
+                        We can use this 'tr:nth-child()' as an easy way to color every other row a different color.
+                    </blockquote>
+                </li>
+                <li>
+                    When should we use a table?
+                    <blockquote>
+                        We use tables when we need to organize data or information included in our webpage in a clear order. 
+                    </blockquote>
+                </li>
+            </ul>
+        </div>
     </main>
     <footer>
-
+        <p>&copy; 2024 Jethro Sumiran</p>
     </footer>
 </body>
 </html>
