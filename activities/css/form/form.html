@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Engagement</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h2>Web Design - Form</h2>
+    </header>
+    <nav>
+        <a href="link">Link</a>
+        <a href="link">Link</a>
+        <a href="link">Link</a>
+        <a href="link">Link</a>
+        <a href="link">Link</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <form action="processing.html" method="post">
+            First Name: <input type="text" name="first" value="Jethro" placeholder="First Name"> <br>
+            Last Name: <input type="text" name="last" value="Sumiran" placeholder="Last Name"> <br>
+            <input type="radio" name="class" value="Freshman" checked required> Freshman <br>
+            <input type="radio" name="class" value="Sophomore"> Sophomore <br>
+            <input type="radio" name="class" value="Junior"> Junior <br>
+            <input type="radio" name="class" value="Senior"> Senior <br>
+            Comments: <textarea name="comments" id="" placeholder="Additional Comment"></textarea> <br>
+            State: <select name="state" id="">
+                <option value="blank"></option>
+                <option value="hi">Hawaii</option>
+                <option value="ca">California</option>
+                <option value="ph">Philippines</option>
+                <option value="au">Australia</option>
+            </select> <br>
+            Email: <input type="email" name="email" placeholder="Email Address" required> <br>
+            Password: <input type="password" name="password" placeholder="Password" required="required"> <br>
+            <input type="checkbox" name="remember" checked> Remember Me <br>
+            <input class="submit" type="submit">
+        </form>
+
+        <hr>
+
+        <h3>Engagement Questions</h3>
+        <ul>
+            <li>
+                The form tag has an "action" attribute. What does it do?
+                <blockquote>
+                    The action attribute defines what will be done after the form is submitted.
+                </blockquote>
+            </li>
+            <li>
+                The form tag has a "method" attribute. What does it do?
+                <blockquote>
+                    This attribute specifies how the form data will be sent, either using POST or GET.
+                </blockquote>
+            </li>
+            <li>
+                What is the difference between a "POST" and a "GET"?
+                <blockquote>
+                    "GET" displays the inputted information with the domain name when it's submitted, while "POST" hides its visibility but doesn't make it more secure.
+                </blockquote>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jethro Sumiran</p>
+    </footer>
+</body>
+</html>

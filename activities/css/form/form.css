@@ -1,0 +1,23 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    color: brown;
+    justify-content: center;
+}
+
+nav {
+    color: blue;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    color: brown;
+}
+
+.submit:hover {
+    color: brown;
+}
