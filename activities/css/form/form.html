@@ -22,29 +22,52 @@
 
     <main>
         <form action="processing.html" method="post">
-            First Name: <input type="text" name="first" value="Jethro" placeholder="First Name"> <br>
-            Last Name: <input type="text" name="last" value="Sumiran" placeholder="Last Name"> <br>
-            <input type="radio" name="class" value="Freshman" checked required> Freshman <br>
-            <input type="radio" name="class" value="Sophomore"> Sophomore <br>
-            <input type="radio" name="class" value="Junior"> Junior <br>
-            <input type="radio" name="class" value="Senior"> Senior <br>
-            Comments: <textarea name="comments" id="" placeholder="Additional Comment"></textarea> <br>
-            State: <select name="state" id="">
-                <option value="blank"></option>
-                <option value="hi">Hawaii</option>
-                <option value="ca">California</option>
-                <option value="ph">Philippines</option>
-                <option value="au">Australia</option>
-            </select> <br>
-            Email: <input type="email" name="email" placeholder="Email Address" required> <br>
-            Password: <input type="password" name="password" placeholder="Password" required="required"> <br>
-            <input type="checkbox" name="remember" checked> Remember Me <br>
-            <input class="submit" type="submit">
+
+            <fieldset class="one">
+                <legend class="onelegend">Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first" value="Jethro" placeholder="First Name"> <br>
+                </div>
+
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id='lname' name="last" value="Sumiran" placeholder="Last Name"> <br>
+                </div>  
+
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" placeholder="Password" required="required"> <br>
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                    <input type="checkbox" name="remember" checked> 
+                    Remember Me <br>
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <div class="spacer">Class:</div>
+                    <input type="radio" id="classtype" name="class" value="Freshman" checked required> Freshman <br>
+                    <input type="radio" id="classtype" name="class" value="Sophomore"> Sophomore <br>
+                    <input type="radio" id="classtype" name="class" value="Junior"> Junior <br>
+                    <input type="radio" id="classtype" name="class" value="Senior"> Senior <br>
+                </div>
+
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+
+            </fieldset>
+
         </form>
 
         <hr>
 
-        <h3>Engagement Questions</h3>
+        <h3>Engagement Questions - Nov 6</h3>
         <ul>
             <li>
                 The form tag has an "action" attribute. What does it do?
@@ -62,6 +85,24 @@
                 What is the difference between a "POST" and a "GET"?
                 <blockquote>
                     "GET" displays the inputted information with the domain name when it's submitted, while "POST" hides its visibility but doesn't make it more secure.
+                </blockquote>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3>Engagement Questions - Nov 8</h3>
+        <ul>
+            <li>
+                What are different ways to style your form?
+                <blockquote>
+                    We can use CSS to control input sizes, colors, and add things like rounded borders for a clean look. I can also use focus effects on buttons to make the form feel more interactive. 
+                </blockquote>
+            </li>
+            <li>
+                Why does the professor like to use flex?
+                <blockquote>
+                    Flex allows webpages to adjust easily to small screen sizes. 
                 </blockquote>
             </li>
         </ul>

@@ -21,3 +21,76 @@ nav a:hover {
 .submit:hover {
     color: brown;
 }
+
+.one {
+    background-color:blanchedalmond;
+    padding: 20px;
+    margin: 20px;
+}
+
+.two {
+    background-color: blanchedalmond;
+    padding: 20px;
+    margin: 20px
+}
+
+.onelegend {
+    background-color:burlywood;
+    border: thin solid darkslategray;
+    color: white;
+    padding: 10px;
+}
+
+.twolegend {
+    background-color:burlywood;
+    border: thin solid darkslategray;
+    color: white;
+    padding: 10px;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.form-row label {
+    width: 100px;
+    text-align: right;
+}
+
+.spacer {
+    width: 100px;
+    text-align: right;
+}
+
+input[type="submit"] {
+    background-color: BLACK;
+    color: WHITE;
+    padding: 10px;
+}
+
+input:not([type="submit"]) {  /* Everything that is not a submit */
+    padding: 10px;
+    font-size: 1em;
+    background-color: #ddd;
+    border-radius: 10px;  /* Round the edges of the boxes */
+    border: 0;
+    border-bottom: thin solid #222;
+}
+
+input:not([type="submit"]):focus {  /* Everything that is not a submit */
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        text-align: left; 
+    }
+
+
+}
