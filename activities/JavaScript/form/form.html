@@ -133,11 +133,11 @@
     </footer>
 
     <script>  //getElementbyId --> Get a tag using the id. An event includes "clicking", "scrolling", "typing" on your webpage. 
-        document.getElementById('myForm').addEventListener('submit',function(event) {
+        document.getElementById('myForm').addEventListener('submit', function(event) {
             event.preventDefault();  //Stop it from going to a new page
             const name = document.getElementById('name').value;
             console.log(name);
-            alert('Form Submitted');
+            alert("Form Submitted");
         })
     </script>
 </body>
