@@ -135,8 +135,7 @@
     <script>  //getElementbyId --> Get a tag using the id. An event includes "clicking", "scrolling", "typing" on your webpage. 
         document.getElementById('myForm').addEventListener('submit',function(event) {
             event.preventDefault();  //Stop it from going to a new page
-            const first = document.getElementById('fname').value;
-            const last = document.getElementById('lname').value;
+            const name = document.getElementById('name').value;
             alert('Form Submitted');
         })
     </script>
