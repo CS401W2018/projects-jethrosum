@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Forms</title>
+    <link rel="stylesheet" href="form.css" media="screen">
+</head>
+<body>
+    <header>
+        <h2>Project - Forms</h2>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+
+            <fieldset class="border">
+
+                <legend class="legendone">Please Fill Out Form</legend>
+
+                <div class="one">
+
+                    <div class="row">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="fullname" id="name" placeholder="eg. John Doe" required> <br>
+                    </div>
+
+                    <div class="row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="(Optional)">
+                    </div>
+    
+                    <div class="row">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required> <br>
+                    </div>
+    
+                    <div class="checked-row">
+                        <input type="checkbox" name="rememberme" id="remember"> 
+                        <label for="remember">Remember Me</label> <br>
+                    </div>
+    
+                    <div class="row">
+                        <div class="spacer">Status:</div> 
+                        <div>
+                            <input type="radio" name="class" checked id="single" required> 
+                            <label for="single">Single</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="class" id="engaged">
+                            <label for="engaged">Engaged</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="class" id="married">
+                            <label for="married">Married</label> <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="class" id="other">
+                            <label for="other">Other</label> <br>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <label for="year">Year</label>
+                        <select name="year" id="year" required>
+                            <option label="blank"></option>
+                            <option value="fr">Freshman</option>
+                            <option value="so">Sophomore</option>
+                            <option value="jr">Junior</option>
+                            <option value="sr">Senior</option>
+                        </select> <br>
+                    </div>
+    
+                    <div class="row">
+                        <label for="comments">Additional Comments:</label>
+                        <textarea name="comments" placeholder="(Optional)" id="comments"></textarea> <br>
+                    </div>
+    
+                    <div class="row">
+                        <label for="submit"></label>
+                        <input type="submit" id="submit">
+                    </div>
+                </div>
+
+
+            </fieldset>
+        </form>
+
+        <hr>
+        <div class="engagement">
+            <h3>Engagement - Nov 13</h3>
+            <ul>
+                <li>
+                    What is JavaScript? How did it get its name?
+                    <blockquote>
+                        The most commonly used programming language. Java was created by Sun Microsystems. The creators of JavaScript used Java and wanted to implement and use it within Sun Microsystems' internet browser, NetScape, so they created JavaScript. It was a marketing ploy to pull Java into the web. 
+                    </blockquote>
+                </li>
+                <li>
+                    What are the two ways you can run JavaScript?
+                    <blockquote>
+                        1. In the browser or in the "DOM"
+                    </blockquote>
+                    <blockquote>
+                        2. Through Node.js (Run JavaScript as you would Python)
+                    </blockquote>
+                </li>
+                <li>
+                    What was the most popular front-end js library?
+                    <blockquote>
+                        JQuery.js was the most popular front-end js library. 
+                    </blockquote>
+                </li>
+                <li>
+                    What is the most popular front-end js library today?
+                    <blockquote>
+                        React.js is the most popular front-end js library today. This library was created by Meta, the parent company of Facebook and Instagram. 
+                    </blockquote>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Jethro Sumiran</p>
+    </footer>
+
+    <script>  //getElementbyId --> Get a tag using the id. An event includes "clicking", "scrolling", "typing" on your webpage. 
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();  //Stop it from going to a new page
+            const first = document.getElementById('fname').value;
+            const last = document.getElementById('lname').value;
+            alert('Form Submitted');
+        })
+    </script>
+</body>
+</html>
