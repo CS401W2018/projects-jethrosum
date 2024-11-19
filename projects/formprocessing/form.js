@@ -34,12 +34,20 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
     xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            const response = JSON.parse(xhr.response);
-            document.getElementById('message').innerHTML = response.message;
-            document.getElementById('myForm').innerHTML = "";
-        } else if (xhr.readyState === 4) {
-            alert('Error submitting form.');
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                try {
+                    const response = JSON.parse(xhr.responseText);
+                    document.getElementById('message').innerHTML = response.message;
+                    document.getElementById('myForm').innerHTML = "";
+                } catch (e) {
+                    alert('Error processing the server response.');
+                    console.error('JSON parse error:', e);
+                }
+            } else {
+                alert(`Error submitting form. Status: ${xhr.status}`);
+                console.error('Request failed:', xhr.status, xhr.statusText);
+            }
         }
     };
 
