@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Form Processing</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h3>BYU–Hawaii | Filipino Club</h3>
+    </header>
+
+    <main>
+
+        <div id="mainBody">
+
+            <h3 id="subheading">Register for the Raffle</h3>
+
+            <div id="message"></div>
+        
+            <form action="processing.html" method="post" id="myForm">
+    
+                <fieldset id="FIELDSET">
+    
+                    <legend id="LEGEND">Please Fill Out Form</legend>
+    
+                    <div id="mainForm">
+    
+                        <div class="row">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="eg. John"> <br>
+                        </div>
+    
+                        <div class="row">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="eg. Doe"> <br>
+                        </div>
+    
+    
+                        <div class="row">
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@domain.com"> <br>
+                        </div>
+    
+    
+                        <div class="row">
+                            <label for="age">Password:</label>
+                            <input type="number" name="age" id="age"> <br>
+                        </div>
+    
+                        <div class="row">
+                            <label for="submit"></label>
+                            <input type="submit" id="submit">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jethro Sumiran</p>
+    </footer>
+
+    <script src="form.js" ></script>
+</body>
+</html>

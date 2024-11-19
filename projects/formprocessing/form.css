@@ -1,0 +1,55 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color:brown;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    justify-content: center;
+}
+
+#subheading {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    margin-top: 0;
+    color: brown;
+}
+
+#mainBody {
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#mainForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#FIELDSET {
+    border: none;
+}
+
+.row {
+    margin: 10px;
+    padding: 10px;
+}
+
+.row label {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+}
+
+.row input {
+    width: 300px;
+    flex: 2; 
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px 1px #ebeaea;
+}
