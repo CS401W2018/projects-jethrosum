@@ -1,0 +1,170 @@
+/*1. HOME PAGE */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: brown;
+    height: 60px;
+    justify-content: space-evenly;
+}
+
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: WHITE;
+    text-decoration: none;
+    padding: 18px;
+}
+
+nav a:hover {
+    display: flex;
+    color:burlywood; 
+    font-size: larger;
+    background-color: #bd5246;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.activenav {
+    color: burlywood;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+header h2 {
+    color: brown;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#mainbody {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+#homevideo {
+    display: flex;
+    justify-content: center;
+}
+
+#homevideo iframe {
+    width: 1080px;
+    height: 720px;
+    padding: 50px;
+}
+
+footer {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+
+
+/*2. STORY PAGE */
+/* #storybg {
+    background-image: url("storybg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-origin: content-box;
+} */
+
+/* #storydarkcover {
+    background-color: rgba(60, 24, 24, 0.2);
+    background-size: cover;
+    width: 100%;
+    min-height: 800px;
+} */
+
+#storyheading {
+    display: flex;
+    flex-direction: column;
+    background-color: WHITE;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#storycontent {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.tableborder {
+    margin: 30px;
+    border-spacing: 2px;
+    overflow-x: auto;
+    display: block;
+}
+
+.tableborder th, .tableborder td {
+    border: thin solid BLACK;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/*3. GUIDE PAGE */
+
+
+/*4. GATCHA PAGE */
+
+
+/*5. QANDA PAGE */
+
+
+/*6. DOWNLOAD PAGE */
+
+
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    #homevideo iframe {
+        width: 640px;
+        height: 480px;
+        padding: 50px;
+    }
+
+    /*2. STORY PAGE*/
+    #storybg {
+        background-size: 320vh;
+        
+    }
+
+    .tableborder {
+        margin: 30px;
+        border-spacing: 2px;
+        overflow-x: auto;
+        display: block;
+    }
+
+
+}
