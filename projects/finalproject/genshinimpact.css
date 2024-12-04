@@ -51,11 +51,16 @@ header h2 {
     margin: 0;
 }
 
-#mainbody {
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
+.mainbody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #homevideo {
@@ -69,6 +74,146 @@ header h2 {
     padding: 50px;
 }
 
+#mainImg1 {
+    background-image: url("mainImage2.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#mainImg1 h5 {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+#mainImg2 {
+    background-image: url("fontaine1.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg2 h5 {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+
+#mainImg3 {
+    background-image: url("diluc.avif");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg3 h5 {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+#mainImg4 {
+    background-image: url("liyue.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg4 h5 {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+#mainImg5 {
+    background-image: url("mainImg3.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg5 h5 {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+#mainImg6 {
+    background-image: url("nahidabg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg6 h5 {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    margin: 0; 
+    color: white; 
+    text-shadow: 2px 2px #000000;
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+
 footer {
     padding-top: 50px;
     padding-left: 100px;
@@ -77,23 +222,7 @@ footer {
 }
 
 
-
 /*2. STORY PAGE */
-/* #storybg {
-    background-image: url("storybg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-origin: content-box;
-} */
-
-/* #storydarkcover {
-    background-color: rgba(60, 24, 24, 0.2);
-    background-size: cover;
-    width: 100%;
-    min-height: 800px;
-} */
 
 #storyheading {
     display: flex;
@@ -106,10 +235,21 @@ footer {
 }
 
 #storycontent {
-    padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 50px;
+}
+
+#storytext { 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .tableborder {
@@ -128,45 +268,422 @@ footer {
 
 /*3. GUIDE PAGE */
 
+.guidebody {
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+}
+
+.maincard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    justify-content: center !important; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.guidetips {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 /*4. GATCHA PAGE */
+
+.gatchainfo {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#gatchaimg1 {
+    background-image: url("banner.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#gatchaimg2 {
+    background-image: url("wishing.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#gatchavideo {
+    display: flex;
+    justify-content: center;
+}
+
+#gatchavideo iframe {
+    width: 1080px;
+    height: 720px;
+    padding: 50px;
+}
 
 
 /*5. QANDA PAGE */
 
+#qandabody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#qandabody h3 {
+    font-size: 2rem;
+    color: #333; 
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+}
+
+.qanda-card {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qanda-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.qanda-card .question {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.qanda-card .answer {
+    font-size: 1rem;
+    color: #555; 
+    line-height: 1.5;
+}
+
 
 /*6. DOWNLOAD PAGE */
 
+#pdfinfo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+#pdfformcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+#FIELDSET {
+    border: none;
+}
+
+.row {
+    margin: 10px;
+    padding: 10px;
+}
+
+.row label {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+}
+
+.row input {
+    width: 300px;
+    flex: 2; 
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px 1px #ebeaea;
+}
 
 
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1024px) and (min-width: 651px) {
+
+    nav {
+        justify-content: space-around; 
+    }
+
+    nav a {
+        font-size: 1rem; 
+        padding: 15px;
+    }
+
+    #homevideo iframe {
+        width: 80%;
+        height: 500px;
+        padding: 30px;
+    }
+
+    .maincard {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+        padding: 30px; 
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    #mainImg1, #mainImg2, #mainImg3, #mainImg4, #mainImg5, #mainImg6 {
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #mainImg1 h5, #mainImg2 h5, #mainImg3 h5, #mainImg4 h5, #mainImg5 h5, #mainImg6 h5 {
+        font-size: 3rem; 
+        padding: 10px;
+    }
+
+    #storyheading {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    #storycontent {
+        padding: 40px;
+    }
+
+    .tableborder {
+        margin: 20px;
+        font-size: 1rem;
+    }
+
+    .gatchainfo {
+        padding: 30px;
+    }
+
+    #gatchaimg1, #gatchaimg2 {
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #gatchavideo iframe {
+        width: 80%;
+        height: 500px;
+    }
+
+    #qandabody {
+        padding: 20px;
+    }
+
+    #qandabody h3 {
+        font-size: 1.8rem;
+    }
+
+    .qanda-card {
+        padding: 15px;
+    }
+
+    .qanda-card .question {
+        font-size: 1.1rem;
+    }
+
+    .qanda-card .answer {
+        font-size: 0.95rem;
+    }
+}
+
+#pdfinfo {
+    padding: 30px;
+}
+
+#pdfformcontent {
+    padding: 20px;
+}
+
+.row {
+    margin: 8px;
+    padding: 8px;
+}
+
+.row label {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.row input {
+    width: 100%;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 650px) {
     nav {
         flex-direction: column;
         text-align: center;
         height: auto;
     }
 
-    #homevideo iframe {
-        width: 640px;
-        height: 480px;
-        padding: 50px;
+    nav a {
+        padding: 10px;
+        font-size: 1rem;
     }
 
-    /*2. STORY PAGE*/
-    #storybg {
-        background-size: 320vh;
-        
+    #homevideo iframe {
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+    }
+
+    #mainImg1, #mainImg2, #mainImg3, #mainImg4, #mainImg5, #mainImg6 {
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #mainImg1 h5, #mainImg2 h5, #mainImg3 h5, #mainImg4 h5, #mainImg5 h5, #mainImg6 h5 {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .mainbody {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 500px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #storyheading {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    #storycontent {
+        padding: 20px;
     }
 
     .tableborder {
-        margin: 30px;
-        border-spacing: 2px;
+        margin: 10px;
         overflow-x: auto;
-        display: block;
+        font-size: 0.9rem;
     }
 
+    .maincard {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 
+    .card {
+        padding: 15px;
+    }
+
+    .gatchainfo {
+        padding: 20px;
+    }
+
+    #gatchaimg1, #gatchaimg2 {
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #gatchavideo iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #qandabody {
+        padding: 15px;
+    }
+
+    #qandabody h3 {
+        font-size: 1.5rem;
+    }
+
+    .qanda-card {
+        padding: 10px;
+    }
+
+    .qanda-card .question {
+        font-size: 1rem;
+    }
+
+    .qanda-card .answer {
+        font-size: 0.9rem;
+    }
+
+    #pdfinfo {
+        padding: 20px;
+    }
+
+    #pdfformcontent {
+        padding: 10px;
+    }
+
+    .row {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .row label {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .row input {
+        width: 100%;
+        box-shadow: none;
+    }
 }
-
-/* CSS */

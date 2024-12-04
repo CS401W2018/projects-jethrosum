@@ -19,20 +19,50 @@
     <header>
         <div id="mainheading">
             <h4>Genshin Impact</h4>
-            <h2>A Beginner's Guide</h2>
+            <h2>Guide PDF Download</h2>
         </div>
     </header>
 
     <main>
-        <div id="mainbody">
+        <div id="pdfinfo">
+            <form action="processing.html" method="post" id="myForm">
 
+                <fieldset id="FIELDSET">
+                    <legend> Submit to Download PFD Guide </legend>
+
+                    <div id="pdfformcontent">
+                        <div class="row">
+                            <label for="fullName">Full Name:</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="eg. John Doe (Optional)"> <br>
+                        </div>
+                        <div class="row">
+                            <label for="favorite">Favorite Character:</label>
+                            <input type="text" name="favorite" id="favorite" placeholder="eg. Nahida (Optional)"> <br>
+                        </div>
+                        <div class="row">
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@domain.com"> <br>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" name="Optin" id="Optin"> 
+                            <label for="Optin">Opt In for Future Updates</label> <br>
+                        </div>
+
+                        <div class="row">
+                            <label for="submit"></label>
+                            <input type="submit" id="submit">
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Jethro Sumiran</p>
     </footer>
+
+    <script src="genshinimpact.js" ></script>
 </body>
 </html>
-
-<!-- PDF -->
