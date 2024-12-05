@@ -21,21 +21,19 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                try {
-                    const response = JSON.parse(xhr.responseText);
-                    document.getElementById('pdfinfo').innerHTML = response.message;
-                    document.getElementById('myForm').innerHTML = "";
-                } catch (e) {
-                    alert('Error processing the server response.');
-                    console.error('JSON parse error:', e);
-                }
-            } else {
-                alert(`Error submitting form. Status: ${xhr.status}`);
-                console.error('Request failed:', xhr.status, xhr.statusText);
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            try {
+                const response = JSON.parse(xhr.responseText);
+                document.getElementById('pdfinfo').innerHTML = response.message;
+                document.getElementById('myForm').reset();  // reset form after submission
+            } catch (e) {
+                alert('Error processing the server response.');
+                console.error('JSON parse error:', e);
             }
+        } else {
+            alert(`Error submitting form. Status: ${xhr.status}`);
+            console.error('Request failed:', xhr.status, xhr.statusText);
         }
     };
 
