@@ -1,0 +1,899 @@
+/*1. HOME PAGE */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: brown;
+    height: 60px;
+    justify-content: space-evenly;
+}
+
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: WHITE;
+    text-decoration: none;
+    padding: 18px;
+}
+
+nav a:hover {
+    display: flex;
+    color:burlywood; 
+    font-size: larger;
+    background-color: #bd5246;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.activenav {
+    color: burlywood;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+header h2 {
+    color: brown;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.mainbody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#homevideo {
+    display: flex;
+    justify-content: center;
+}
+
+#homevideo iframe {
+    width: 1080px;
+    height: 720px;
+    padding: 50px;
+}
+
+#mainImg1 {
+    background-image: url("mainImage2.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#mainImg1 h5 {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+#mainImg2 {
+    background-image: url("fontaine1.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg2 h5 {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+
+#mainImg3 {
+    background-image: url("diluc.avif");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg3 h5 {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+#mainImg4 {
+    background-image: url("liyue.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg4 h5 {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+#mainImg5 {
+    background-image: url("mainImg3.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg5 h5 {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+    margin: 0; 
+    color: white; 
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+#mainImg6 {
+    background-image: url("nahidabg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+#mainImg6 h5 {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    margin: 0; 
+    color: white; 
+    text-shadow: 2px 2px #000000;
+    padding: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+
+footer {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+iframe {
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+    margin: 0 auto;
+}
+
+/*2. STORY PAGE */
+
+#storyheading {
+    display: flex;
+    flex-direction: column;
+    background-color: WHITE;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#storycontent {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+#storytext { 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tableborder {
+    margin: 30px;
+    border-spacing: 2px;
+    overflow-x: auto;
+    display: block;
+}
+
+.tableborder th, .tableborder td {
+    border: thin solid BLACK;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/*3. GUIDE PAGE */
+
+.guidebody {
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+}
+
+.maincard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    justify-content: center !important; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.guidetips {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* TEAMS PAGE */
+
+body#teamsbg {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    display: flex;
+    background-color: brown;
+    height: 60px;
+    justify-content: space-evenly;
+}
+
+nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 18px;
+}
+
+nav a:hover {
+    color: burlywood;
+    font-size: larger;
+    background-color: #bd5246;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.activenav {
+    color: burlywood;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 0;
+}
+
+header h2 {
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+
+#teamscontent {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#teamstext {
+    margin-bottom: 30px;
+}
+
+#teamstext p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.teamstableborder {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #f9f9f9;
+    table-layout: fixed;
+}
+
+.teamstableborder th, .teamstableborder td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.teamstableborder th {
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+}
+
+.teamstablerow td img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+footer ul li {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/*4. GATCHA PAGE */
+
+.gatchainfo {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#gatchaimg1 {
+    background-image: url("banner.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#gatchaimg2 {
+    background-image: url("wishing.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#gatchavideo {
+    display: flex;
+    justify-content: center;
+}
+
+#gatchavideo iframe {
+    width: 1080px;
+    height: 720px;
+    padding: 50px;
+}
+
+
+/*5. QANDA PAGE */
+
+#qandabody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#qandabody h3 {
+    font-size: 2rem;
+    color: #333; 
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: center;
+}
+
+.qanda-card {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qanda-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.qanda-card .question {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.qanda-card .answer {
+    font-size: 1rem;
+    color: #555; 
+    line-height: 1.5;
+}
+
+
+/*6. DOWNLOAD PAGE */
+
+#pdfinfo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+#pdfformcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+#FIELDSET {
+    border: none;
+}
+
+.row {
+    margin: 10px;
+    padding: 10px;
+}
+
+.row label {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+}
+
+.row input {
+    width: 300px;
+    flex: 2; 
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px 1px #ebeaea;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 651px) {
+
+    nav {
+        justify-content: space-around;
+        flex-direction: row; 
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 15px;
+        text-align: center; 
+        display: inline-block; 
+    }
+
+    #homevideo iframe {
+        width: 80%;
+        height: 500px;
+        padding: 30px;
+    }
+
+    .maincard {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+        padding: 30px; 
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    #mainImg1, #mainImg2, #mainImg3, #mainImg4, #mainImg5, #mainImg6 {
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #mainImg1 h5, #mainImg2 h5, #mainImg3 h5, #mainImg4 h5, #mainImg5 h5, #mainImg6 h5 {
+        font-size: 3rem; 
+        padding: 10px;
+    }
+
+    #storyheading {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    #storycontent {
+        padding: 40px;
+    }
+
+    .tableborder {
+        margin: 20px;
+        font-size: 1rem;
+    }
+
+    /* TEAMS */
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #teamscontent {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    #teamstext p {
+        font-size: 1rem;
+    }
+
+    .teamstableborder th, .teamstableborder td {
+        padding: 10px;
+    }
+
+
+    .gatchainfo {
+        padding: 30px;
+    }
+
+    #gatchaimg1, #gatchaimg2 {
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #gatchavideo iframe {
+        width: 80%;
+        height: 500px;
+    }
+
+    #qandabody {
+        padding: 20px;
+    }
+
+    #qandabody h3 {
+        font-size: 1.8rem;
+    }
+
+    .qanda-card {
+        padding: 15px;
+    }
+
+    .qanda-card .question {
+        font-size: 1.1rem;
+    }
+
+    .qanda-card .answer {
+        font-size: 0.95rem;
+    }
+}
+
+#pdfinfo {
+    padding: 30px;
+}
+
+#pdfformcontent {
+    padding: 20px;
+}
+
+.row {
+    margin: 8px;
+    padding: 8px;
+}
+
+.row label {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.row input {
+    width: 100%;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #homevideo iframe {
+        width: 100%;
+        height: 300px;
+        padding: 20px;
+    }
+
+    #mainImg1, #mainImg2, #mainImg3, #mainImg4, #mainImg5, #mainImg6 {
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #mainImg1 h5, #mainImg2 h5, #mainImg3 h5, #mainImg4 h5, #mainImg5 h5, #mainImg6 h5 {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .mainbody {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 500px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #storyheading {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    #storycontent {
+        padding: 20px;
+    }
+
+    .tableborder {
+        margin: 10px;
+        overflow-x: auto;
+        font-size: 0.9rem;
+    }
+
+    .maincard {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    /* TEAMS */
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    #teamscontent {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    #teamstext p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .teamstableborder th, .teamstableborder td {
+        padding: 8px;
+    }
+
+    .teamstablerow td img {
+        width: 80px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer ul li {
+        font-size: 0.8rem;
+    }
+
+
+    .gatchainfo {
+        padding: 20px;
+    }
+
+    #gatchaimg1, #gatchaimg2 {
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #gatchavideo iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #qandabody {
+        padding: 15px;
+    }
+
+    #qandabody h3 {
+        font-size: 1.5rem;
+    }
+
+    .qanda-card {
+        padding: 10px;
+    }
+
+    .qanda-card .question {
+        font-size: 1rem;
+    }
+
+    .qanda-card .answer {
+        font-size: 0.9rem;
+    }
+
+    #pdfinfo {
+        padding: 20px;
+    }
+
+    #pdfformcontent {
+        padding: 10px;
+    }
+
+    .row {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .row label {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .row input {
+        width: 100%;
+        box-shadow: none;
+    }
+}
