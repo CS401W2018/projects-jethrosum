@@ -1,66 +1,125 @@
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h2 {
+    margin: 0;
 }
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #F56D73;
-    padding: 10px;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .sidebar {
-    display: flex;
-    float: right;
+    flex: 1;
+    max-width: 300px;
+    margin-left: 20px;
 }
 
-.sidebar-right { 
+.sidebar-right {
     background-color: #F56D73;
-    width: 400px;
-}
-
-.border {
+    padding: 15px;
+    border-radius: 5px;
     color: white;
-    margin: 5px auto;
-    border: thin solid BLACK;
-    border-spacing: 5px;
-    background-color:#F56D73
 }
 
-#head {
-    background-color: black;
+.sidebar-right figure {
+    margin: 0;
 }
 
-#one {
-    background-color: blue;
+.sidebar-right img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-#two {
-    background-color: blueviolet;
+.sidebar-right figcaption {
+    font-size: 0.9em;
+    line-height: 1.5;
 }
 
-#three {
-    background-color: brown;
+table.border {
+    flex: 3;
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-#four {
-    background-color: cadetblue;
+table.border caption {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
 }
 
-#five {
-    background-color: darkblue;
+table.border th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-.border th, .border td {
-    border: thin solid black;
-    padding: 5px;
+table.border td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
 }
 
-caption {
-    color: black;
+table.border tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+table.border tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tfoot tr {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
 }
