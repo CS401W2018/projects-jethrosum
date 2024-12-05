@@ -1,0 +1,23 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.border {
+    border: thin solid BLACK;
+    padding: 20px;
+}
+
+#foot {
+    color: GREEN;
+}
