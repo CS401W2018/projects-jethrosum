@@ -22,7 +22,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
     xhr.onload = function () {
-        if (xhr.status === 200) {
+        if (xhr.status === 400) {
             try {
                 const response = JSON.parse(xhr.responseText);
                 document.getElementById('pdfinfo').innerHTML = response.message;
