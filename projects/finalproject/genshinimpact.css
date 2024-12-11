@@ -1,35 +1,36 @@
 /*1. HOME PAGE */
 body {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav {
     display: flex;
-    background-color: brown;
+    justify-content: center;
+    align-items: center;
     height: 60px;
-    justify-content: space-evenly;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 nav a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: WHITE;
+    color: #2d3276;
     text-decoration: none;
-    padding: 18px;
+    padding: 10px 15px;
+    font-size: 1rem;
 }
 
 nav a:hover {
-    display: flex;
-    color:burlywood; 
-    font-size: larger;
-    background-color: #bd5246;
-    justify-content: center;
-    padding-top: 18px;
+    color: #f4ac45;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
 .activenav {
-    color: burlywood;
-    font-size: larger;
+    color: #f9a632;
+    font-size: 1.1rem;
     font-weight: bolder;
 }
 
@@ -45,8 +46,8 @@ header h4 {
 }
 
 header h2 {
-    color: brown;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#f4ac45;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -74,8 +75,7 @@ header h2 {
     padding: 50px;
 }
 
-#mainImg1 {
-    background-image: url("mainImage2.jpg");
+#mainImg1, #mainImg2, #mainImg3, #mainImg4, #mainImg5, #mainImg6 {
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,134 +83,46 @@ header h2 {
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 100px;
 }
 
-#mainImg1 h5 {
+#mainImg1:hover, #mainImg2:hover, #mainImg3:hover, #mainImg4:hover, #mainImg5:hover, #mainImg6:hover {
+    transform: scale(1.05); 
+    transition: transform 0.8s ease, filter 0.8s ease; 
+}
+
+
+#mainImg1 h5, #mainImg2 h5, #mainImg3 h5, #mainImg4 h5, #mainImg5 h5, #mainImg6 h5 {
     position: absolute;
-    bottom: 10px; 
-    left: 10px;
-    margin: 0; 
-    color: white; 
+    margin: 0;
+    color: white;
     padding: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+
+#mainImg1 {
+    background-image: url("mainImage2.jpg");
 }
 
 #mainImg2 {
     background-image: url("fontaine1.png");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-
-    position: relative;
 }
-
-#mainImg2 h5 {
-    position: absolute;
-    top: 10px; 
-    right: 10px;
-    margin: 0; 
-    color: white; 
-    padding: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5rem;
-}
-
 
 #mainImg3 {
     background-image: url("diluc.avif");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-
-    position: relative;
-}
-
-#mainImg3 h5 {
-    position: absolute;
-    bottom: 10px; 
-    left: 10px;
-    margin: 0; 
-    color: white; 
-    padding: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5rem;
 }
 
 #mainImg4 {
     background-image: url("liyue.png");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-
-    position: relative;
-}
-
-#mainImg4 h5 {
-    position: absolute;
-    top: 10px; 
-    right: 10px;
-    margin: 0; 
-    color: white; 
-    padding: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5rem;
 }
 
 #mainImg5 {
     background-image: url("mainImg3.png");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-
-    position: relative;
-}
-
-#mainImg5 h5 {
-    position: absolute;
-    bottom: 10px; 
-    left: 10px;
-    margin: 0; 
-    color: white; 
-    padding: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5rem;
 }
 
 #mainImg6 {
     background-image: url("nahidabg.jpg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-
-    position: relative;
-}
-
-#mainImg6 h5 {
-    position: absolute;
-    top: 10px; 
-    right: 10px;
-    margin: 0; 
-    color: white; 
-    text-shadow: 2px 2px #000000;
-    padding: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 5rem;
 }
 
 
@@ -259,16 +171,30 @@ iframe {
 }
 
 .tableborder {
-    margin: 30px;
-    border-spacing: 2px;
-    overflow-x: auto;
-    display: block;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #f9f9f9;
+    table-layout: fixed;
 }
 
 .tableborder th, .tableborder td {
-    border: thin solid BLACK;
-    padding: 30px;
+    border: 1px solid #ddd;
+    padding: 15px;
     text-align: center;
+}
+
+.tableborder th {
+    background-color: #2d3276;
+    color: white;
+    font-weight: bold;
+}
+
+.tablerow td img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -322,54 +248,9 @@ iframe {
 
 /* TEAMS PAGE */
 
-body#teamsbg {
+#teamsbg {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-}
-
-nav {
-    display: flex;
-    background-color: brown;
-    height: 60px;
-    justify-content: space-evenly;
-}
-
-nav a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
-    text-decoration: none;
-    padding: 18px;
-}
-
-nav a:hover {
-    color: burlywood;
-    font-size: larger;
-    background-color: #bd5246;
-    justify-content: center;
-    padding-top: 18px;
-}
-
-.activenav {
-    color: burlywood;
-    font-size: larger;
-    font-weight: bolder;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-}
-
-header h4 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 0;
-}
-
-header h2 {
-    color: brown;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0;
 }
 
 #teamscontent {
@@ -406,7 +287,7 @@ header h2 {
 }
 
 .teamstableborder th {
-    background-color: brown;
+    background-color: #2d3276;
     color: white;
     font-weight: bold;
 }
@@ -455,6 +336,7 @@ footer ul li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 #gatchaimg1 {
     background-image: url("banner.jpg");
     height: 100vh;
@@ -464,6 +346,7 @@ footer ul li {
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 100px;
 }
 
 #gatchaimg2 {
@@ -475,6 +358,12 @@ footer ul li {
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 100px;
+}
+
+#gatchaimg1:hover, #gatchaimg2:hover {
+    transform: scale(1.05); 
+    transition: transform 0.8s ease, filter 0.8s ease; 
 }
 
 #gatchavideo {
@@ -583,15 +472,13 @@ footer ul li {
 @media only screen and (max-width: 1024px) and (min-width: 651px) {
 
     nav {
-        justify-content: space-around;
-        flex-direction: row; 
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
     nav a {
-        font-size: 1rem;
-        padding: 15px;
-        text-align: center; 
-        display: inline-block; 
+        font-size: 0.9rem;
+        padding: 8px 10px;
     }
 
     #homevideo iframe {
@@ -614,6 +501,7 @@ footer ul li {
         height: 70vh;
         background-size: cover;
         background-position: center;
+        margin: 20px;
     }
 
     #mainImg1 h5, #mainImg2 h5, #mainImg3 h5, #mainImg4 h5, #mainImg5 h5, #mainImg6 h5 {
@@ -702,6 +590,7 @@ footer ul li {
     }
 }
 
+
 #pdfinfo {
     padding: 30px;
 }
@@ -747,6 +636,7 @@ footer ul li {
         height: 60vh;
         background-size: cover;
         background-position: center;
+        margin: 20px;
     }
 
     #mainImg1 h5, #mainImg2 h5, #mainImg3 h5, #mainImg4 h5, #mainImg5 h5, #mainImg6 h5 {
